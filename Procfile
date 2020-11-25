@@ -1,1 +1,0 @@
-web: gunicorn django_dashing_demo_app.wsgi --log-file -
