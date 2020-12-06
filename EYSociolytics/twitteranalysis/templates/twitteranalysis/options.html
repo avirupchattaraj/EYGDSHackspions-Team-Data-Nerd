@@ -1,0 +1,62 @@
+{% extends "twitteranalysis/twitterbase.html" %} {% block content %}
+
+<h1 class="text-center display-4">Options Available</h1>
+
+<br />
+
+<div class="container">
+  <div class="row">
+    <div class="card-deck">
+      <div class="card">
+        <div class="card-body">
+          <h5 class="card-title">Tweets by Username</h5>
+          <p class="card-text">
+            Use this option if you want to get the tweets related to a specific
+            Username.
+          </p>
+          <a href="{% url 'inputform1' %}" class="btn btn-primary">Let's go</a>
+        </div>
+      </div>
+      <div class="card">
+        <div class="card-body">
+          <h5 class="card-title">Tweets by Keyword search</h5>
+          <p class="card-text">
+            Use this option if you want to get tweets related to a specific
+            keyword.
+          </p>
+          <br />
+          <a href="{% url 'inputform2' %}" class="btn btn-primary">Let's go</a>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+<br />
+<div class="container">
+  <div class="row">
+    <div class="card-deck">
+      <div class="card">
+        <div class="card-body">
+          <h5 class="card-title">Customisable Search</h5>
+          <p class="card-text">
+            Use this option if you want to get tweets by customizing the
+            different options of our scraper.
+          </p>
+          <a href="{% url 'inputform3' %}" class="btn btn-primary">Let's go</a>
+        </div>
+      </div>
+      <div class="card">
+        <div class="card-body">
+          <h5 class="card-title">EY Specific Tweets</h5>
+          <p class="card-text">
+            Use this option if you want to get tweets from specific EY handles.
+          </p>
+          <br />
+          <a href="{% url 'inputform4' %}" class="btn btn-primary">Let's go</a>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+{%endblock%}
