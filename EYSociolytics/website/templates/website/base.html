@@ -14,11 +14,11 @@
 
     <link
       rel="shortcut icon"
-      href="{% static 'website/images/favicon.png' %}"
+      href="{% static 'website/favicon.png' %}"
       type="image/x-icon"
     />
 
-    <title>Title page</title>
+    <title>EYSociolytics</title>
 
     <link href="{% static 'website/style.css' %}" rel="stylesheet" />
   </head>
@@ -40,9 +40,9 @@
               <span class="icon-bar"></span>
               <span class="icon-bar"></span>
             </button>
-            <a class="navbar-brand" href="./index.html" title="">
+            <a class="navbar-brand" href="{% url 'home' %}" title="">
               <img
-                src="./assets/images/mashuptemplate.svg"
+                src="{% static 'website/favicon.png' %}"
                 class="navbar-logo-img"
                 alt=""
               />
@@ -55,18 +55,8 @@
                 <a href="{% url 'home' %}" title="" class="active">Home</a>
               </li>
               <li><a href="{% url 'about' %}" title=""> About</a></li>
-              <li><a href="{% url 'pricing' %}" title=""> Pricing </a></li>
+              <li><a href="{% url 'pricing' %}" title=""> Twitter </a></li>
               <li><a href="{% url 'contact' %}" title="">Contact</a></li>
-              <li>
-                <p>
-                  <a
-                    href="{% url 'download' %}"
-                    class="btn btn-primary navbar-btn"
-                    title=""
-                    >Download</a
-                  >
-                </p>
-              </li>
             </ul>
           </div>
         </div>
@@ -81,71 +71,35 @@
           <div class="row">
             <div class="col-md-4">
               <h4>About us</h4>
-              <p>
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc
-                sit amet consectetur dolor
-              </p>
+              <p>EYSociolytics</p>
+              <p>A Social Media Tool With A Difference</p>
             </div>
 
-            <div class="col-md-4">
+            <div class="col-md-4 col-md-offset-4">
               <h4>Do you like ? Share this !</h4>
               <p>
                 <a
-                  href="https://facebook.com/"
+                  href="#"
                   class="social-round-icon white-round-icon fa-icon"
                   title=""
                 >
                   <i class="fa fa-facebook" aria-hidden="true"></i>
                 </a>
                 <a
-                  href="https://twitter.com/"
+                  href="#"
                   class="social-round-icon white-round-icon fa-icon"
                   title=""
                 >
                   <i class="fa fa-twitter" aria-hidden="true"></i>
                 </a>
                 <a
-                  href="https://www.linkedin.com/"
+                  href="#"
                   class="social-round-icon white-round-icon fa-icon"
                   title=""
                 >
                   <i class="fa fa-linkedin" aria-hidden="true"></i>
                 </a>
               </p>
-              <p>
-                <small
-                  >© Untitled | Website created with
-                  <a
-                    href="http://www.mashup-template.com/"
-                    class="link-like-text"
-                    title="Create website with free html template"
-                    >Mashup Template</a
-                  >/<a
-                    href="http://www.unsplash.com/"
-                    class="link-like-text"
-                    title="Beautiful Free Images"
-                    >Unsplash</a
-                  ></small
-                >
-              </p>
-            </div>
-
-            <div class="col-md-4">
-              <h4>Subscribe to newsletter</h4>
-
-              <div class="form-group">
-                <div class="input-group">
-                  <input type="text" class="form-control footer-input-text" />
-                  <div class="input-group-btn">
-                    <button
-                      type="button"
-                      class="btn btn-primary btn-newsletter"
-                    >
-                      OK
-                    </button>
-                  </div>
-                </div>
-              </div>
             </div>
           </div>
         </div>
