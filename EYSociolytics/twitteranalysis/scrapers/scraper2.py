@@ -16,7 +16,7 @@ second=current_time.second
 def csv_creator_two(search):
     c = twint.Config()
     c.Search= search
-    c.Limit = 1000
+    c.Limit = 200
     c.Store_csv = True
     c.Output = f"output_{day}_{month}_{year}_{hour}_{minute}.csv"
     
