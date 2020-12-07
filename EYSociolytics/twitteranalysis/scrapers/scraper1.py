@@ -16,8 +16,8 @@ second=current_time.second
 def csv_creator_one(username):
     c = twint.Config()
     c.Username = username
-    c.Limit = 150
+    c.Limit = 1000
     c.Store_csv = True
-    c.Output = f"output_{day}_{month}_{year}_{hour}_{minute}_{second}.csv"
+    c.Output = f"output_{day}_{month}_{year}_{hour}_{minute}.csv"
     
     twint.run.Profile(c)

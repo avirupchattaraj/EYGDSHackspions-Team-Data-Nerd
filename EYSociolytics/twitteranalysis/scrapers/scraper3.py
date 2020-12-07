@@ -20,6 +20,6 @@ def csv_creator_three(username,keyword,since,until,limit):
     c.Since=since
     c.Until=until
     c.Store_csv = True
-    c.Output = f"output_{day}_{month}_{year}_{hour}_{minute}_{second}.csv"
+    c.Output = f"output_{day}_{month}_{year}_{hour}_{minute}.csv"
     
     twint.run.Search(c)
