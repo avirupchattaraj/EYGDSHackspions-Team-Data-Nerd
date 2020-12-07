@@ -34,6 +34,7 @@ defusedxml==0.6.0
 Django==3.1.3
 djangorestframework==3.12.2
 elasticsearch==7.10.0
+en-core-web-md @ https://github.com/explosion/spacy-models/releases/download/en_core_web_md-2.3.1/en_core_web_md-2.3.1.tar.gz
 entrypoints==0.3
 enum-compat==0.0.3
 fake-useragent==0.1.11
@@ -147,6 +148,7 @@ twint @ file:///C:/Users/aviru/Documents/GITHUB%20REPOS/EYGDSHackspions-Team-Dat
 typing-extensions==3.7.4.3
 tzlocal==2.1
 urllib3==1.26.2
+vaderSentiment==3.3.2
 validators==0.18.1
 wasabi==0.8.0
 watchdog==0.10.4
