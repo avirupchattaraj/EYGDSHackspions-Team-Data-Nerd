@@ -1,0 +1,34 @@
+{% extends 'twitteranalysis/twitterbase.html' %} {% block content%}
+
+<div class="jumbotron text-center">
+  <h1 class="display-4 text-center">Welcome to Twitter Analysis</h1>
+  <hr class="my-4">
+  <p>Want to check out the multiple options</p>
+  <a class="btn btn-primary btn-lg" href="{% url 'options' %}" role="button">Let's go</a>
+</div>
+
+<div class="container guideline-container mt-5">
+  <div class="row">
+    <div class="col-md-12">
+      <h2 class="text-center">Features of our Scraper</h2>
+    </div>
+  </div>
+  <div class="row mt-3">
+    <div class="col-md-4">
+      <h3>No Rate Limit</h3>
+    </div>
+    <div class="col-md-4">
+      <h3>No Twitter API Access</h3>
+    </div>
+    <div class="col-md-4 pl-5">
+      <h3>Customisable</h3>
+    </div>
+  </div>
+</div>
+<div class="guideline-container container>
+  <div>
+
+  </div>
+</div>
+
+{% endblock %}

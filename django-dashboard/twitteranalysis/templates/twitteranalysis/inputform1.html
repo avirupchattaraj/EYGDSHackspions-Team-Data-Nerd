@@ -1,0 +1,26 @@
+{% extends "twitteranalysis/twitterbase.html" %} {% block content %}
+
+<div class="container mt-5">
+  <div class="row">
+    <div class="col-md-12 text-center">
+      <div class="card text-center">
+        <div class="card-header">Twitter Scraper</div>
+        <div class="card-body">
+          <h5 class="card-title">Username Scraper</h5>
+          <p class="card-text">
+            based upon a certain username
+          </p>
+          <form method="POST">
+            {% csrf_token %}
+            <label for="username">Enter the Username</label>
+            <input type="text" name="username" id="username" required />
+            <br />
+            <button type="submit" class="btn btn-success">Click Me</button>
+          </form>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+{% endblock %}

@@ -1,0 +1,37 @@
+{% extends "twitteranalysis/twitterbase.html" %} {% block content %}
+
+<div class="container mt-5">
+  <div class="row">
+    <div class="col-md-12 text-center">
+      <div class="card text-center">
+        <div class="card-header">Twitter Scraper</div>
+        <div class="card-body">
+          <h5 class="card-title">EY Profile Tweet's Scraper</h5>
+          <p class="card-text">
+            Helps to get you tweets from registered EY profiles
+          </p>
+          <form method="POST">
+            {% csrf_token %}
+            <label for="username">Choose your EY profile</label>
+            <select name="username" id="username">
+              <option value="EY_India">EY_India</option>
+              <option value="EYnews">EYnews</option>
+              <option value="EY_US">EY_US</option>
+              <option value="ey">ey</option>
+              <option value="EY_People">EY_People</option>
+              <option value="EY_UKI">EY_UKI</option>
+              <option value="EY_Press">EY_Press</option>
+              <option value="EY_TMT">EY_TMT</option>
+              <option value="EY_Banking">EY_Banking</option>
+              <option value="EY_Consulting">EY_Consulting</option>
+            </select>
+            <br />
+            <button type="submit" class="btn btn-success">Click Me</button>
+          </form>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+{% endblock %}
