@@ -19,5 +19,4 @@ def csv_creator_one(username):
     c.Limit = 200
     c.Store_csv = True
     c.Output = f"output_{day}_{month}_{year}_{hour}_{minute}.csv"
-    
     twint.run.Profile(c)
